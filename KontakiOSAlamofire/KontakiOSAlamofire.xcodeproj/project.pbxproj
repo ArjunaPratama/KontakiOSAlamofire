@@ -10,6 +10,8 @@
 		8D35FED7686114851A8EAD63 /* Pods_KontakiOSAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08648311FA254CAB0AF3606A /* Pods_KontakiOSAlamofire.framework */; };
 		DC92B1C61FB953F700F3A260 /* KontakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B1C51FB953F700F3A260 /* KontakTableViewCell.swift */; };
 		DC92B1C81FB9549400F3A260 /* KontakTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B1C71FB9549400F3A260 /* KontakTableViewController.swift */; };
+		DC92B1CA1FB9708600F3A260 /* KontakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B1C91FB9708600F3A260 /* KontakViewController.swift */; };
+		DC92B1CC1FB9795E00F3A260 /* Kontak.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B1CB1FB9795E00F3A260 /* Kontak.swift */; };
 		DCAF03811FB94B8D0002617D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF03801FB94B8D0002617D /* AppDelegate.swift */; };
 		DCAF03831FB94B8D0002617D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF03821FB94B8D0002617D /* ViewController.swift */; };
 		DCAF03861FB94B8D0002617D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF03841FB94B8D0002617D /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		653C0F8E5717D579E8EEF6EF /* Pods-KontakiOSAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KontakiOSAlamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KontakiOSAlamofire/Pods-KontakiOSAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
 		DC92B1C51FB953F700F3A260 /* KontakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontakTableViewCell.swift; sourceTree = "<group>"; };
 		DC92B1C71FB9549400F3A260 /* KontakTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontakTableViewController.swift; sourceTree = "<group>"; };
+		DC92B1C91FB9708600F3A260 /* KontakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontakViewController.swift; sourceTree = "<group>"; };
+		DC92B1CB1FB9795E00F3A260 /* Kontak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kontak.swift; sourceTree = "<group>"; };
 		DCAF037D1FB94B8D0002617D /* KontakiOSAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KontakiOSAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAF03801FB94B8D0002617D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAF03821FB94B8D0002617D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				DCAF038C1FB94B8D0002617D /* Info.plist */,
 				DC92B1C51FB953F700F3A260 /* KontakTableViewCell.swift */,
 				DC92B1C71FB9549400F3A260 /* KontakTableViewController.swift */,
+				DC92B1C91FB9708600F3A260 /* KontakViewController.swift */,
+				DC92B1CB1FB9795E00F3A260 /* Kontak.swift */,
 			);
 			path = KontakiOSAlamofire;
 			sourceTree = "<group>";
@@ -351,7 +357,9 @@
 				DCAF03831FB94B8D0002617D /* ViewController.swift in Sources */,
 				DC92B1C81FB9549400F3A260 /* KontakTableViewController.swift in Sources */,
 				DCAF03811FB94B8D0002617D /* AppDelegate.swift in Sources */,
+				DC92B1CC1FB9795E00F3A260 /* Kontak.swift in Sources */,
 				DC92B1C61FB953F700F3A260 /* KontakTableViewCell.swift in Sources */,
+				DC92B1CA1FB9708600F3A260 /* KontakViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

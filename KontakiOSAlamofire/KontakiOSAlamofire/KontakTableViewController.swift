@@ -13,7 +13,12 @@ import SwiftyJSON
 
 
 class KontakTableViewController: UITableViewController {
-
+    var nameSelected:String?
+    var emailSelected:String?
+    var genderSelected:String?
+    var idSelected:String?
+    
+    var kontak = [Kontak]()
     var arrRes = [[String: AnyObject]]()//array dictionary
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,12 +61,49 @@ class KontakTableViewController: UITableViewController {
 
         // Configure the cell...
         var dict = arrRes[indexPath.row]
-        cell.labelNama.text = dict["name"] as! String
-        cell.labelEmail.text = dict["email"] as! String
+        cell.labelNama.text = dict["name"] as? String
+        cell.labelEmail.text = dict["email"] as? String
 
         return cell
-    }
+}
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+    //mengecek data yang dikirim
+    print("Row \(indexPath.row)selected")
     
+    let task = arrRes[indexPath.row]
+    //memasukan data ke variable namaSelected dan image selected ke masing masing variable nya
+        emailSelected = task["email"] as! String
+    nameSelected = task["name"] as! String
+    idSelected = task["id"] as! String
+    genderSelected = task["gender"] as! String
+    
+    
+    
+    
+    
+    //memamnggil segue passDataDetail
+    performSegue(withIdentifier: "segue", sender: self)
+}
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //mengecek apakah segue nya ada atau  tidak`
+    if segue.identifier == "segue"{
+        //kondisi ketika segue nya ada
+        //mengirimkan data ke detailViewController
+//        let kirimData = segue.destination as! KontakViewController
+        //mengirimkan data ke masing2 variable
+        //mengirimkan nama wisata
+        
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! KontakViewController
+                let value = arrRes[indexPath.row]
+                controller.passname = value["name"] as? String
+                controller.passemail = value["email"] as! String
+                controller.passid = value["id"] as? String
+                controller.passgender = value["gender"] as! String
+            }
+    }
+}
 
     /*
     // Override to support conditional editing of the table view.
@@ -107,5 +149,7 @@ class KontakTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+
 
 }
